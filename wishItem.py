@@ -28,6 +28,7 @@ class WishItemWidget(QDialog, Ui_WishItem):
             self.notesEdit.setReadOnly(False)
 
             self.changeUpdateButton.setText("Update")
+            self.nameWishItemEdit.setFocus()
             self.is_updating = True
         else:
             name = self.nameWishItemEdit.text()
